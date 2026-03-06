@@ -1,0 +1,288 @@
+{
+  "info": {
+    "_postman_id": "4c53003c-130a-4941-91da-ef7d62bdfa2e",
+    "name": "Microservice",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50671253",
+    "_collection_link": "https://go.postman.co/collection/50671253-4c53003c-130a-4941-91da-ef7d62bdfa2e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "User Service",
+      "item": [
+        {
+          "name": "Get Users",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/users",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "users"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Users By Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/users/79c5f4b4-3b3c-418b-9225-1748d5cbbd7e",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "users",
+                "79c5f4b4-3b3c-418b-9225-1748d5cbbd7e"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Save Users",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\" : \"Amogh Patil\",\r\n    \"email\" : \"alpatil@gmail.com\",\r\n    \"about\" : \"Devoops Engineer\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8081/users",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "users"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Hotel Service",
+      "item": [
+        {
+          "name": "Get Hotels",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/hotels",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "hotels"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get HotelsBy Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/hotels/e3eb2cbd-00e0-4381-a182-e90eb692b038",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "hotels",
+                "e3eb2cbd-00e0-4381-a182-e90eb692b038"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Hotels",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\" : \"Rama International\",\r\n    \"location\" : \"Sambhajinagar\",\r\n    \"about\" : \"7 star hotel\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/hotels",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "hotels"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Staffs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/staffs",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "staffs"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Rating Service",
+      "item": [
+        {
+          "name": "All Ratings",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8083/ratings",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8083",
+              "path": [
+                "ratings"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getting using userId",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8083/ratings/users/e9f51b28-c8e0-40d4-9450-9eeae35caa2d",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8083",
+              "path": [
+                "ratings",
+                "users",
+                "e9f51b28-c8e0-40d4-9450-9eeae35caa2d"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getting using hotelId",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8083/ratings/hotels/e3eb2cbd-00e0-4381-a182-e90eb692b038",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8083",
+              "path": [
+                "ratings",
+                "hotels",
+                "e3eb2cbd-00e0-4381-a182-e90eb692b038"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Rating",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"rating\" : 9,\r\n    \"feedback\" : \" good hotel with above top services\",\r\n    \"userId\" : \"6cee9399-3019-44b3-ad18-dacf91044750\",\r\n    \"hotelId\" : \"5836e936-917a-486c-a525-589ab97373d7\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8083/ratings",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8083",
+              "path": [
+                "ratings"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Gateway Test",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8084/users/6cee9399-3019-44b3-ad18-dacf91044750",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8084",
+          "path": [
+            "users",
+            "6cee9399-3019-44b3-ad18-dacf91044750"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
